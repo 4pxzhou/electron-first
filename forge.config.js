@@ -19,4 +19,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: '4pxzhou',
+          name: 'electron-first',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ],
 };
